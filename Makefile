@@ -30,8 +30,15 @@ bash:
 	@printf $(MESSAGE) "Bash" $(NUM)
 	@bash -f "bash/euler$(NUM).sh"
 
+c:
+	@printf $(MESSAGE) "C" $(NUM)
+	@gcc -o program c/helper.c "c/euler$(NUM).c"
+	@./program
+	@make clean
+
 clean:
 	@rm -f haskell/*.hi $(HASKELL_RUN)
+	@rm -f program
 
 clojure:
 	@cd clojure; lein run -m euler.euler$(NUM)
@@ -61,4 +68,4 @@ py:
 %:
 	@: # phony rule to quiet warning about no rule for 'number' argument
 
-.PHONY: answer bash clean clojure hs js lua php py %
+.PHONY: answer bash c clean clojure hs js lua php py %
