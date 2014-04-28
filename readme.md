@@ -42,6 +42,7 @@ If you are adding a new language to the project please make sure that you check 
 
 # Contributors
 
+  * [Rob Anderson](https://github.com/randerson12)
   * [Joe Colburn](https://github.com/joetech)
   * [John Fair](https://github.com/johnbfair)
   * [Josh Headapohl](https://github.com/joshhead)
