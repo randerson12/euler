@@ -1,7 +1,7 @@
 /**
  * PROJECT EULER
  * Exercise 005
- * Time: 0.000003s
+ * Time: 0.000002s
  *
  * Problem:
  * 2520 is the smallest number that can be divided by each of the numbers from
@@ -55,7 +55,9 @@ int main(void)
 {
     const int limit = 20;
 
+    startTimer();
     int lcm = leastCommonMultiple(limit);
+    stopTimer();
     result(lcm, 232792560);
 
     return 0;

@@ -1,7 +1,7 @@
 /**
  * PROJECT EULER
  * Exercise 001
- * Time: 0.000002s
+ * Time: 0.000001s
  *
  * Problem:
  * If we list all the natural numbers below 10 that are multiples of 3 or 5, 
@@ -38,7 +38,9 @@ int main(void)
 {
     const int limit = 999;
 
+    startTimer();
     int sum = (sumDivisible(3, limit) + sumDivisible(5, limit)) - sumDivisible(15, limit);
+    stopTimer();
     result(sum, 233168);
 
     return 0;

@@ -1,7 +1,7 @@
 /**
  * PROJECT EULER
  * Exercise 007
- * Time: 0.009s
+ * Time: 0.002562s
  *
  * Problem:
  * By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, 
@@ -61,7 +61,9 @@ int main(void)
 {
     const int target = 10001;
 
+    startTimer();
     int nPrime = prime(target);
+    stopTimer();
     result(nPrime, 104743);
 
     return 0;

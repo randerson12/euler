@@ -1,7 +1,7 @@
 /**
  * PROJECT EULER
  * Exercise 004
- * Time: 0.003372s
+ * Time: 0.003295s
  *
  * Problem:
  * A palindromic number reads the same both ways. The largest palindrome made
@@ -89,7 +89,9 @@ unsigned int maxPalindrome()
 
 int main(void)
 {
+    startTimer();
     unsigned int max = maxPalindrome();
+    stopTimer();
     result(max, 906609);
 
     return 0;

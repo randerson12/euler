@@ -1,7 +1,7 @@
 /**
  * PROJECT EULER
  * Exercise 006
- * Time: 0.000003s
+ * Time: 0.000002s
  *
  * Problem:
  * The sum of the squares of the first ten natural numbers is:
@@ -53,7 +53,9 @@ int main(void)
 {
     const int limit = 100;
 
+    startTimer();
     long diff = diffSumSquares(limit);
+    stopTimer();
     result(diff, 25164150);
 
     return 0;

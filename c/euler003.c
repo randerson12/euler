@@ -1,7 +1,7 @@
 /**
  * PROJECT EULER
  * Exercise 003
- * Time: 0.000018s
+ * Time: 0.000010s
  *
  * Problem:
  * The prime factors of 13195 are 5,7,13, and 29.
@@ -62,7 +62,9 @@ int main(void)
 {
     const long n = 600851475143;
 
+    startTimer();
     long factor = maxPrimeFactor(n);
+    stopTimer();
     result(factor, 6857);
 
     return 0;
